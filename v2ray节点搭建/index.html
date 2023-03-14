@@ -16,23 +16,29 @@
   <meta name="author" content="岚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="前言在这信息爆炸的时代，我们虽然可以在网络上获取各种各样的内容，包括电影、电视剧、综艺节目等等。但由于版权等原因，有些内容可能会被限制或者屏蔽。比如Netflix屏蔽了大陆ip，导致我们无法观看上面的内容。 为了能够在Netflix上看最近爆火的《黑暗荣耀》，需要解锁对大陆ip的屏蔽。我选择通过搭建v2ray节点的方式。 前置关于软硬件环境的准备  一台vps，需要满足以下几点 vps的ip为非大">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://sailan.opensp.top/hello-world/index.html">
+<meta property="og:title" content="v2ray节点搭建">
+<meta property="og:url" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="生活收集计划">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言在这信息爆炸的时代，我们虽然可以在网络上获取各种各样的内容，包括电影、电视剧、综艺节目等等。但由于版权等原因，有些内容可能会被限制或者屏蔽。比如Netflix屏蔽了大陆ip，导致我们无法观看上面的内容。 为了能够在Netflix上看最近爆火的《黑暗荣耀》，需要解锁对大陆ip的屏蔽。我选择通过搭建v2ray节点的方式。 前置关于软硬件环境的准备  一台vps，需要满足以下几点 vps的ip为非大">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-10T03:15:19.218Z">
-<meta property="article:modified_time" content="2023-03-10T09:11:30.411Z">
+<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793968446.png">
+<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793982431.png">
+<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794000494.png">
+<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794015762.png">
+<meta property="article:published_time" content="2023-03-14T07:22:50.000Z">
+<meta property="article:modified_time" content="2023-03-14T11:45:16.158Z">
 <meta property="article:author" content="岚">
+<meta property="article:tag" content="部署">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793968446.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Hello World - 生活收集计划</title>
+  <title>v2ray节点搭建 - 生活收集计划</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +204,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="v2ray节点搭建"></span>
           
         </div>
 
@@ -209,8 +215,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-10 11:15" pubdate>
-          2023年3月10日 上午
+        <time datetime="2023-03-14 15:22" pubdate>
+          2023年3月14日 下午
         </time>
       </span>
     
@@ -221,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          1.3k 字
         
       </span>
     
@@ -232,7 +238,7 @@
         
         
         
-          4 分钟
+          11 分钟
         
       </span>
     
@@ -270,24 +276,59 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">v2ray节点搭建</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在这信息爆炸的时代，我们虽然可以在网络上获取各种各样的内容，包括电影、电视剧、综艺节目等等。但由于版权等原因，有些内容可能会被限制或者屏蔽。比如Netflix屏蔽了大陆ip，导致我们无法观看上面的内容。</p>
+<p>为了能够在Netflix上看最近爆火的《黑暗荣耀》，需要解锁对大陆ip的屏蔽。我选择通过搭建v2ray节点的方式。</p>
+<h1 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h1><p>关于软硬件环境的准备</p>
+<ul>
+<li>一台vps，需要满足以下几点<ul>
+<li>vps的ip为非大陆ip</li>
+<li>vps的ip至少需要满足，可观看Netflix自制剧<ul>
+<li><p>可使用该脚本检测</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># amd64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_amd64 &amp;&amp; <span class="hljs-built_in">chmod</span> +x nf &amp;&amp; ./nf<br><br><span class="hljs-comment"># arm64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_arm64 &amp;&amp; <span class="hljs-built_in">chmod</span> +x nf &amp;&amp; ./nf<br><br><span class="hljs-comment"># mips</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_mips &amp;&amp; <span class="hljs-built_in">chmod</span> +x nf &amp;&amp; ./nf<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>使用节点的环境需要可访问vps</li>
+</ul>
+</li>
+<li>一个域名</li>
+<li>搭建v2ray脚本</li>
+<li>v2ray客户端</li>
+</ul>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="域名配置"><a href="#域名配置" class="headerlink" title="域名配置"></a>域名配置</h2><p>域名在没有备案的情况下是无法使用国内的cdn服务的。这里我选择将域名的dns服务器修改为cloudflare的，这样就能使用免费的cdn服务。</p>
+<p>腾讯购买的域名修改dns服务器可参考下图</p>
+<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793968446.png" srcset="/img/loading.gif" lazyload class="" width="1678793968446">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<p>接下来需要到<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>新增dns解析域名，新增时需要将代理状态按钮置为关闭，可参考下图</p>
+<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793982431.png" srcset="/img/loading.gif" lazyload class="" width="1678793982431">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<h2 id="v2ray一键脚本使用"><a href="#v2ray一键脚本使用" class="headerlink" title="v2ray一键脚本使用"></a>v2ray一键脚本使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">bash &lt;(curl -s -L https://git.io/v2ray.sh)<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+<p>传输类型选择：VLESS_WebSocket_TLS</p>
+<p>端口：可默认，也可自定义（防火墙需要放行改端口）</p>
+<p>域名：输入新建的域名，需特别注意，域名一定要<strong>填写正确</strong></p>
+<p>网站伪装：默认N即可</p>
+<p>广告拦截：机器性能好的话可开启</p>
+<p>Shadowsocks：默认N即可</p>
+<p>确认好配置后点击回车安装,如出现下图所示证明安装成功了</p>
+<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794000494.png" srcset="/img/loading.gif" lazyload class="" width="1678794000494">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>输入v2ray url可生成vmess url</p>
+<h2 id="v2客户端配置"><a href="#v2客户端配置" class="headerlink" title="v2客户端配置"></a>v2客户端配置</h2><p>客户端选择可参考v2官方文档<a target="_blank" rel="noopener" href="https://v2ray.com/awesome/tools.html#%E7%A5%9E%E4%B8%80%E6%A0%B7%E7%9A%84%E5%B7%A5%E5%85%B7%E4%BB%AC">工具推荐</a>节点</p>
+<p>我使用的是安卓，就用安卓上的客户端做演示了，其他客户端操作应该也大同小异。</p>
+<p><strong>节点添加</strong>：复制vmess url后，在app中点击添加，选择从剪切板导入</p>
+<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794015762.png" srcset="/img/loading.gif" lazyload class="" width="1678794015762">
+
+<p>节点添加成功后选择节点，点击app右下角的V进行连接。至此节点搭建配置成功，可访问<a target="_blank" rel="noopener" href="http://www.google.com测试连通性./">www.google.com测试连通性。</a></p>
+<h1 id="节点无法使用问题"><a href="#节点无法使用问题" class="headerlink" title="节点无法使用问题"></a>节点无法使用问题</h1><ol>
+<li>排查本地时间与服务器时间是否一致，v2会检查时间差。需要保持一致</li>
+<li>检查vps端口是否开放，可在本地使用telnet ip port命令检查端口是否放行</li>
+<li>cloudflare的SSL&#x2F;TLS加密模式是否调整成完全</li>
+</ol>
 
                 
               </div>
@@ -297,6 +338,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%83%A8%E7%BD%B2/">#部署</a>
+      
+    </div>
+  
 </div>
 
 
@@ -305,8 +353,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://sailan.opensp.top/hello-world/</div>
+      <div>v2ray节点搭建</div>
+      <div>https://sailan.opensp.top/v2ray节点搭建/</div>
     </div>
     <div class="license-meta">
       
@@ -318,7 +366,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月10日</div>
+          <div>2023年3月14日</div>
         </div>
       
       
@@ -350,15 +398,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/" title="v2ray节点搭建">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">v2ray节点搭建</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
