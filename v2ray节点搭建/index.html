@@ -26,9 +26,9 @@
 <meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793968446.png">
 <meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793982431.png">
 <meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794000494.png">
-<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794015762.png">
+<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678795022656.png">
 <meta property="article:published_time" content="2023-03-14T07:22:50.000Z">
-<meta property="article:modified_time" content="2023-03-14T11:45:16.158Z">
+<meta property="article:modified_time" content="2023-03-14T12:00:12.215Z">
 <meta property="article:author" content="岚">
 <meta property="article:tag" content="部署">
 <meta name="twitter:card" content="summary_large_image">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.5k 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          11 分钟
+          13 分钟
         
       </span>
     
@@ -286,13 +286,16 @@
 <h1 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h1><p>关于软硬件环境的准备</p>
 <ul>
 <li>一台vps，需要满足以下几点<ul>
-<li>vps的ip为非大陆ip</li>
-<li>vps的ip至少需要满足，可观看Netflix自制剧<ul>
+<li><p>vps的ip为非大陆ip</p>
+</li>
+<li><p>vps的ip至少需要满足，可观看Netflix自制剧</p>
+<ul>
 <li><p>可使用该脚本检测</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># amd64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_amd64 &amp;&amp; <span class="hljs-built_in">chmod</span> +x nf &amp;&amp; ./nf<br><br><span class="hljs-comment"># arm64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_arm64 &amp;&amp; <span class="hljs-built_in">chmod</span> +x nf &amp;&amp; ./nf<br><br><span class="hljs-comment"># mips</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_mips &amp;&amp; <span class="hljs-built_in">chmod</span> +x nf &amp;&amp; ./nf<br></code></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">amd64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_amd64 &amp;&amp; chmod +x nf &amp;&amp; ./nf<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">arm64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_arm64 &amp;&amp; chmod +x nf &amp;&amp; ./nf<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">mips</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_mips &amp;&amp; chmod +x nf &amp;&amp; ./nf<br><br></code></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li>使用节点的环境需要可访问vps</li>
+<li><p>使用节点的环境需要可访问vps</p>
+</li>
 </ul>
 </li>
 <li>一个域名</li>
@@ -321,14 +324,17 @@
 <h2 id="v2客户端配置"><a href="#v2客户端配置" class="headerlink" title="v2客户端配置"></a>v2客户端配置</h2><p>客户端选择可参考v2官方文档<a target="_blank" rel="noopener" href="https://v2ray.com/awesome/tools.html#%E7%A5%9E%E4%B8%80%E6%A0%B7%E7%9A%84%E5%B7%A5%E5%85%B7%E4%BB%AC">工具推荐</a>节点</p>
 <p>我使用的是安卓，就用安卓上的客户端做演示了，其他客户端操作应该也大同小异。</p>
 <p><strong>节点添加</strong>：复制vmess url后，在app中点击添加，选择从剪切板导入</p>
-<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794015762.png" srcset="/img/loading.gif" lazyload class="" width="1678794015762">
+<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678795022656.png" srcset="/img/loading.gif" lazyload class="" width="1678795022656">
 
-<p>节点添加成功后选择节点，点击app右下角的V进行连接。至此节点搭建配置成功，可访问<a target="_blank" rel="noopener" href="http://www.google.com测试连通性./">www.google.com测试连通性。</a></p>
+<p>节点添加成功后选择节点，点击app右下角的V进行连接。至此节点搭建配置成功，<a href="www.google.com">点击</a>测试连通性。</p>
 <h1 id="节点无法使用问题"><a href="#节点无法使用问题" class="headerlink" title="节点无法使用问题"></a>节点无法使用问题</h1><ol>
-<li>排查本地时间与服务器时间是否一致，v2会检查时间差。需要保持一致</li>
+<li>排查本地时间与服务器时间是否一致，v2会检查本地与服务器时间差。需要保持一致</li>
 <li>检查vps端口是否开放，可在本地使用telnet ip port命令检查端口是否放行</li>
 <li>cloudflare的SSL&#x2F;TLS加密模式是否调整成完全</li>
 </ol>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>在使用v2ray节点时，也应该遵守当地的法律法规，不要进行违法活动。</p>
+<p>分享一个自用节点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">vless://0f058a9a-149d-47ae-a12e-097878bb2e1e@racknerdv2.opensp.top:443?path=%2Ffenliu&amp;security=tls&amp;encryption=none&amp;host=racknerdv2.opensp.top&amp;type=ws&amp;sni=racknerdv2.opensp.top#RackNerd<br></code></pre></td></tr></table></figure>
 
                 
               </div>
