@@ -16,29 +16,24 @@
   <meta name="author" content="岚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言在这信息爆炸的时代，我们虽然可以在网络上获取各种各样的内容，包括电影、电视剧、综艺节目等等。但由于版权等原因，有些内容可能会被限制或者屏蔽。比如Netflix屏蔽了大陆ip，导致我们无法观看上面的内容。 为了能够在Netflix上看最近爆火的《黑暗荣耀》，需要解锁对大陆ip的屏蔽。我选择通过搭建v2ray节点的方式。 前置关于软硬件环境的准备  一台vps，需要满足以下几点 vps的ip为非大">
+    <meta name="description" content="问题系列 很喜欢抄东西，有一种不需要动脑子却又充实的感觉。 烦心的时候，总是想写点东西，无关内容，单纯就是为了在白纸上用笔留下一堆黑色水墨。不过我不爱在电脑上打字，总觉得电脑是个冷冰冰的怪兽。它时而柔情蜜意，时而生硬刺耳，时而化成一滩水，时而冻成三尺冰，时而是温柔乡，但又会在黑色的黑夜长出漫山的罂粟花。 太虚伪。太浮夸。 所以面对电脑，我总是不愿意放开自己，潜意识里有很强的敌意。只有面对平摊着的安">
 <meta property="og:type" content="article">
-<meta property="og:title" content="v2ray节点搭建">
-<meta property="og:url" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:title" content="《完美主义的”破壁“》">
+<meta property="og:url" content="https://sailan.opensp.top/%E3%80%8A%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%9A%84%E2%80%9D%E7%A0%B4%E5%A3%81%E2%80%9C%E3%80%8B/index.html">
 <meta property="og:site_name" content="生活收集计划">
-<meta property="og:description" content="前言在这信息爆炸的时代，我们虽然可以在网络上获取各种各样的内容，包括电影、电视剧、综艺节目等等。但由于版权等原因，有些内容可能会被限制或者屏蔽。比如Netflix屏蔽了大陆ip，导致我们无法观看上面的内容。 为了能够在Netflix上看最近爆火的《黑暗荣耀》，需要解锁对大陆ip的屏蔽。我选择通过搭建v2ray节点的方式。 前置关于软硬件环境的准备  一台vps，需要满足以下几点 vps的ip为非大">
+<meta property="og:description" content="问题系列 很喜欢抄东西，有一种不需要动脑子却又充实的感觉。 烦心的时候，总是想写点东西，无关内容，单纯就是为了在白纸上用笔留下一堆黑色水墨。不过我不爱在电脑上打字，总觉得电脑是个冷冰冰的怪兽。它时而柔情蜜意，时而生硬刺耳，时而化成一滩水，时而冻成三尺冰，时而是温柔乡，但又会在黑色的黑夜长出漫山的罂粟花。 太虚伪。太浮夸。 所以面对电脑，我总是不愿意放开自己，潜意识里有很强的敌意。只有面对平摊着的安">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793968446.png">
-<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793982431.png">
-<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794000494.png">
-<meta property="og:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678795022656.png">
-<meta property="article:published_time" content="2023-03-14T07:22:50.000Z">
-<meta property="article:modified_time" content="2023-04-04T01:58:08.950Z">
+<meta property="article:published_time" content="2023-04-04T01:53:15.000Z">
+<meta property="article:modified_time" content="2023-04-04T01:58:47.467Z">
 <meta property="article:author" content="岚">
-<meta property="article:tag" content="部署">
+<meta property="article:tag" content="日记">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://sailan.opensp.top/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793968446.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>v2ray节点搭建 - 生活收集计划</title>
+  <title>《完美主义的”破壁“》 - 生活收集计划</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -204,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="v2ray节点搭建"></span>
+            <span id="subtitle" data-typed-text="《完美主义的”破壁“》"></span>
           
         </div>
 
@@ -215,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-14 15:22" pubdate>
-          2023年3月14日 下午
+        <time datetime="2023-04-04 09:53" pubdate>
+          2023年4月4日 上午
         </time>
       </span>
     
@@ -227,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          1.3k 字
         
       </span>
     
@@ -238,7 +233,7 @@
         
         
         
-          13 分钟
+          11 分钟
         
       </span>
     
@@ -276,65 +271,33 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">v2ray节点搭建</h1>
+            <h1 style="display: none">《完美主义的”破壁“》</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在这信息爆炸的时代，我们虽然可以在网络上获取各种各样的内容，包括电影、电视剧、综艺节目等等。但由于版权等原因，有些内容可能会被限制或者屏蔽。比如Netflix屏蔽了大陆ip，导致我们无法观看上面的内容。</p>
-<p>为了能够在Netflix上看最近爆火的《黑暗荣耀》，需要解锁对大陆ip的屏蔽。我选择通过搭建v2ray节点的方式。</p>
-<h1 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h1><p>关于软硬件环境的准备</p>
-<ul>
-<li>一台vps，需要满足以下几点<ul>
-<li><p>vps的ip为非大陆ip</p>
-</li>
-<li><p>vps的ip至少需要满足，可观看Netflix自制剧</p>
-<ul>
-<li><p>可使用该脚本检测</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">amd64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_amd64 &amp;&amp; chmod +x nf &amp;&amp; ./nf<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">arm64</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_arm64 &amp;&amp; chmod +x nf &amp;&amp; ./nf<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">mips</span><br>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf_linux_mips &amp;&amp; chmod +x nf &amp;&amp; ./nf<br><br></code></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>使用节点的环境需要可访问vps</p>
-</li>
-</ul>
-</li>
-<li>一个域名</li>
-<li>搭建v2ray脚本</li>
-<li>v2ray客户端</li>
-</ul>
-<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="域名配置"><a href="#域名配置" class="headerlink" title="域名配置"></a>域名配置</h2><p>域名在没有备案的情况下是无法使用国内的cdn服务的。这里我选择将域名的dns服务器修改为cloudflare的，这样就能使用免费的cdn服务。</p>
-<p>腾讯购买的域名修改dns服务器可参考下图</p>
-<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793968446.png" srcset="/img/loading.gif" lazyload class="" width="1678793968446">
-
-<p>接下来需要到<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">cloudflare</a>新增dns解析域名，新增时需要将代理状态按钮置为关闭，可参考下图</p>
-<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678793982431.png" srcset="/img/loading.gif" lazyload class="" width="1678793982431">
-
-<h2 id="v2ray一键脚本使用"><a href="#v2ray一键脚本使用" class="headerlink" title="v2ray一键脚本使用"></a>v2ray一键脚本使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">bash &lt;(curl -s -L https://git.io/v2ray.sh)<br></code></pre></td></tr></table></figure>
-
-<p>传输类型选择：VLESS_WebSocket_TLS</p>
-<p>端口：可默认，也可自定义（防火墙需要放行改端口）</p>
-<p>域名：输入新建的域名，需特别注意，域名一定要<strong>填写正确</strong></p>
-<p>网站伪装：默认N即可</p>
-<p>广告拦截：机器性能好的话可开启</p>
-<p>Shadowsocks：默认N即可</p>
-<p>确认好配置后点击回车安装,如出现下图所示证明安装成功了</p>
-<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678794000494.png" srcset="/img/loading.gif" lazyload class="" width="1678794000494">
-
-<p>输入v2ray url可生成vmess url</p>
-<h2 id="v2客户端配置"><a href="#v2客户端配置" class="headerlink" title="v2客户端配置"></a>v2客户端配置</h2><p>客户端选择可参考v2官方文档<a target="_blank" rel="noopener" href="https://v2ray.com/awesome/tools.html#%E7%A5%9E%E4%B8%80%E6%A0%B7%E7%9A%84%E5%B7%A5%E5%85%B7%E4%BB%AC">工具推荐</a>节点</p>
-<p>我使用的是安卓，就用安卓上的客户端做演示了，其他客户端操作应该也大同小异。</p>
-<p><strong>节点添加</strong>：复制vmess url后，在app中点击添加，选择从剪切板导入</p>
-<img src="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/1678795022656.png" srcset="/img/loading.gif" lazyload class="" width="1678795022656">
-
-<p>节点添加成功后选择节点，点击app右下角的V进行连接。至此节点搭建配置成功，<a target="_blank" rel="noopener" href="https://www.google.com/">点击</a>测试连通性。</p>
-<h1 id="节点无法使用问题"><a href="#节点无法使用问题" class="headerlink" title="节点无法使用问题"></a>节点无法使用问题</h1><ol>
-<li>排查本地时间与服务器时间是否一致，v2会检查本地与服务器时间差。需要保持一致</li>
-<li>检查vps端口是否开放，可在本地使用telnet ip port命令检查端口是否放行</li>
-<li>cloudflare的SSL&#x2F;TLS加密模式是否调整成完全</li>
-</ol>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>在使用v2ray节点时，也应该遵守当地的法律法规，不要进行违法活动。</p>
-<p>分享一个自用节点</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">vless://0f058a9a-149d-47ae-a12e-097878bb2e1e@racknerdv2.opensp.top:443?path=%2Ffenliu&amp;security=tls&amp;encryption=none&amp;host=racknerdv2.opensp.top&amp;type=ws&amp;sni=racknerdv2.opensp.top#RackNerd<br></code></pre></td></tr></table></figure>
+                <p>问题系列</p>
+<p>很喜欢抄东西，有一种不需要动脑子却又充实的感觉。</p>
+<p>烦心的时候，总是想写点东西，无关内容，单纯就是为了在白纸上用笔留下一堆黑色水墨。不过我不爱在电脑上打字，总觉得电脑是个冷冰冰的怪兽。它时而柔情蜜意，时而生硬刺耳，时而化成一滩水，时而冻成三尺冰，时而是温柔乡，但又会在黑色的黑夜长出漫山的罂粟花。</p>
+<p>太虚伪。太浮夸。</p>
+<p>所以面对电脑，我总是不愿意放开自己，潜意识里有很强的敌意。只有面对平摊着的安静的纸张，我才愿意认真对待。静下心，像个雕刻家，一个一个地把字刻上去，然后心里会很满足，好像它们就能被封存下来似的。</p>
+<p>早期很追求完美，所以迟迟不敢落笔。怕幼稚的笔记，浅薄的想法，毁了一本好看的本子。所以经常只囤本子却不用，新本子倒是越来越多，想动笔的念头越来越强，但终究缺点什么契机，好让我义无反顾打破某道束缚，好让意识流在纸面上策马奔腾。</p>
+<p>强烈的完美主义，穿插在了我生活的某些维度。虽然我也有点邋遢，但我在某些事情上是不容由说的执拗。很多重要的事，我觉得没准备到近乎完美，或是在脑子里把整个事情的链路打通前，我就不愿意动手。我怕错，怕打破那种平衡，怕摔碎了”完美“。</p>
+<p>随着年龄增长，我开始明显察觉到这种心态带来很大的不便。我好像被束缚得更严重了，偶尔会有透不过气，想放肆一把的冲动。</p>
+<p>好在，我遇到了一些人，几件事，帮我慢慢放松了这个心结。</p>
+<p>我看到了不一定要准备到完美也能行动的现实案例，有人以身作则给我看了。虽然人家只是不经意，但在我这里，却是一盏点醒我的明灯。</p>
+<p>当时的感觉很奇怪，平静中有一丝震惊，一方面觉得那是理所当然，好像事情本来就该是这样，另一方面又惊愕自己为什么能被限制得这么严重，明明那么简单，只要去做，去做就行了啊，我竟然能停滞那么久。</p>
+<p>同时，当时看到了一本书，里面提到一个概念”晨间日记“，主张不考虑要写出什么内容，单纯写就行了。</p>
+<p>在这两件事的影响下，我拿出了一本挺喜欢的本子，开始试着记录东西。晨间日记的概念真的很安慰到我，我不再害怕自己写不出东西，或者是因为太肤浅而被取笑。</p>
+<p>现在我可以完全不打草稿，随便记下些零碎的东西。一堆堆有的没的，虽然都是些不成体系的自言自语，但对我而言，真的是二十多年来的一次重大突破，颇具有仪式感的味道。</p>
+<p>我不知道接下来会写什么，也不知道我往哪里去，不知道能走多久，不知道终点长什么样子。靠着一种”我想写点什么“的意念，就这么走下去。当然，中途必定会在某个地方停步，但我觉得去哪都无所谓。</p>
+<p>反正只要在路上就好。我喜欢在路上的自己。不喜欢等待，所以我不喜欢等公交，宁可走路一小时，也不愿等公交半小时。因为我还抗拒不可控制的感觉。</p>
+<p>但不可控是人生常态，我也得接受。只不过，我希望我的生活中能多点自己的意愿，多按照自己的想法过活，多关注自己，少点被迫。</p>
+<p>总结一下。</p>
+<p>问题点：完美主义导致行动力弱。</p>
+<p>解决背景：个人压抑太久；身边人作风影响；书中的醍醐灌顶。</p>
+<p>解决方案：书籍&amp;社交。博览群书，筛选到有效的书&amp;文章；和值得学习的人待在一起，发掘闪光点。</p>
+<p>解决现状：每天都想随便写点啥；且不需要考虑太多能直接写。</p>
 
                 
               </div>
@@ -347,7 +310,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E9%83%A8%E7%BD%B2/">#部署</a>
+        <a href="/tags/%E6%97%A5%E8%AE%B0/">#日记</a>
       
     </div>
   
@@ -359,8 +322,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>v2ray节点搭建</div>
-      <div>https://sailan.opensp.top/v2ray节点搭建/</div>
+      <div>《完美主义的”破壁“》</div>
+      <div>https://sailan.opensp.top/《完美主义的”破壁“》/</div>
     </div>
     <div class="license-meta">
       
@@ -372,7 +335,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月14日</div>
+          <div>2023年4月4日</div>
         </div>
       
       
@@ -404,18 +367,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/%E3%80%8A%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%9A%84%E2%80%9D%E7%A0%B4%E5%A3%81%E2%80%9C%E3%80%8B/" title="《完美主义的”破壁“》">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">《完美主义的”破壁“》</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/v2ray%E8%8A%82%E7%82%B9%E6%90%AD%E5%BB%BA/" title="v2ray节点搭建">
+                        <span class="hidden-mobile">v2ray节点搭建</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
